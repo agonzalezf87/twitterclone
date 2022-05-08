@@ -30,72 +30,18 @@ a:hover, a:active {
 
 .mainContainer {
     width: 100vw;
-    height: 100vh;
     background-color: var(--main-darkerblue);
     border: 2px solid var(--main-lighterblue);
     color: var(--main-lightblue);
     padding: 5px;
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    font-size: 1.6rem;
-}
-
-.navBar {
-    padding: 0 25px;
-    height: 2.4rem;
-    order: 2;
-}
-
-.navBar-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navBar-list li {
-    line-height: 2.4rem;
-}
-
-.navBar-list li a {
-    font-size: 1.6rem;
-}
-
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 95%;
-    min-width: 280px;
-    order: 1;
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 25px;
-    background-color: var(--main-blue);
-}
-
-.hero-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid var(--main-darkerblue);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    font-size: 1.6rem;
 }
 
-.hero-img img{
-    display: block;
-    width: 250px;
-    padding-top: 50px;
-}
-
-.hero-text {
-    color: var(--main-darkerblue);
-    margin-top: 16px;
-}
-
-.hero-text__title {
-    font-size: 2.4rem;
+@media screen and (min-height: 460px) {
+    .mainContainer {
+        height: 100vh;
+    }
 }
