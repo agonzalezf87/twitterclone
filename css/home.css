@@ -1,9 +1,9 @@
 .hero {
     min-width: 280px;
     width: 90%;
-    min-height: 60vh;
+    height: 500px;
     background-color: var(--main-darkerblue);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
     margin-top: 15px;
     display: flex;
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 15px var(--main-darkerblue);
+    box-shadow: inset 0 0 1px var(--main-darkerblue);
 }
 
 .hero-picture__container img {
@@ -67,4 +67,7 @@
 }
 
 .hero-action a:hover, .hero-action a:active {
+    border: 2px solid white;
+    padding: 8px;
+    text-decoration: underline;
 }
