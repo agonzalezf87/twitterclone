@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    box-shadow: 0 0 20px var(--main-lighterblue);
+    box-shadow: 0 0 3px var(--main-lighterblue);
 }
 
 .hero-picture {
