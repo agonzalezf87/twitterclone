@@ -102,7 +102,7 @@ a {
 }
 
 .footer {
-    width: 100%;
+    width: 100vw;
     height: 85px;
     background-color: var(--main-darkerblue);
     position: fixed;
@@ -139,4 +139,37 @@ a {
 
 .social-list__item a:hover, .social-list__item a:active {
     font-size: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        height: 36px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0;
+    }
+
+    .nav-menu__item:last-child {
+        display: none;
+    }
+
+    .nav-menu__item a {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }
+
+    .nav-menu__item a:hover, .nav-menu__item a:active{
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        text-decoration: underline;
+    }
 }
