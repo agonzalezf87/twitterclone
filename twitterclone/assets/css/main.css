@@ -1,0 +1,70 @@
+:root {
+    --site-black: #000;
+    --site-white: #f7faff;
+    --white-logo: #d6d9db;
+    --font-white: #e7e9ea;
+    --font-gray: #71767b;
+    --brand-blue: #1d9bf0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+}
+
+.main-login {
+    width: 100%;
+    background-color: #000;
+    color: var(--font-white);
+    padding: 30px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+}
+
+.main-login__logo {
+    font-size: 4.2rem;
+    line-height: 4.9rem;
+}
+
+.main-login__title1 {
+    font-size: 3.8rem;
+    line-height: 4.9rem;
+    margin: 3.8rem 0;
+}
+
+.main-login__title2 {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin-bottom: 1.9rem;
+}
+
+.main-login__title3 {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-login__cta {
+    background-color: #fff;
+    border: none;
+    color: var(--site-black);
+    min-width: 300px;
+    padding: 10px 0;
+    border-radius: 25px;
+    font-weight: 700;
+    outline: none;
+}
+
+.main-login__cta:hover {
+    background-color: var(--site-white);
+}
