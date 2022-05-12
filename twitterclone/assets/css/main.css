@@ -22,6 +22,15 @@ html {
     width: 100%;
 }
 
+.main a {
+    text-decoration: none;
+    color: var(--brand-blue);
+}
+
+.main a:hover, .main a:active{
+    text-decoration: underline;
+}
+
 .main-login {
     width: 100%;
     background-color: #000;
@@ -37,8 +46,8 @@ html {
 }
 
 .main-login__title1 {
-    font-size: 3.8rem;
-    line-height: 4.9rem;
+    font-size: 4rem;
+    line-height: 5.2rem;
     margin: 3.8rem 0;
 }
 
@@ -52,6 +61,7 @@ html {
     font-size: 1.6rem;
     line-height: 1.9rem;
     margin-bottom: 1.5rem;
+    margin-top: 40px;
 }
 
 .main-login__cta {
@@ -63,8 +73,54 @@ html {
     border-radius: 25px;
     font-weight: 700;
     outline: none;
+    margin-bottom: 16px;
 }
 
-.main-login__cta:hover {
-    background-color: var(--site-white);
+.main-login__cta span {
+    margin-right: 5px;
+    color: var(--site-black);
+}
+
+.main-login__cta:hover, .main-login__cta:active {
+    filter: brightness(85%);
+}
+
+.google {
+    color: var(--font-gray);
+}
+
+.mail {
+    background-color: var(--brand-blue);
+    color: var(--font-white);
+}
+
+.signin {
+    background-color: var(--site-black);
+    border: 1px solid var(--font-gray);
+    color: var(--brand-blue);
+}
+
+.main-login__separator {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.main-login__separator > hr {
+    width: 40%;
+    height: 1px;
+    border: 1px solid var(--font-gray);
+}
+
+.main-login__separator > p {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.main-login__terms {
+    font-weight: 400;
+    color: var(--font-gray);
+    margin-bottom: 16px;
 }
