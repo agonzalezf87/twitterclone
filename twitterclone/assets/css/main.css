@@ -20,6 +20,8 @@ html {
 
 .main {
     width: 100%;
+    background-color: #000;
+    overflow-wrap: break-word;
 }
 
 .main a {
@@ -33,15 +35,17 @@ html {
 
 .main-login {
     width: 100%;
-    background-color: #000;
     color: var(--font-white);
-    padding: 30px;
+    padding: 36px;
     font-weight: 700;
-    overflow-wrap: break-word;
+}
+
+.main-login > * {
+    max-width: 300px;
 }
 
 .main-login__logo {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     line-height: 4.9rem;
 }
 
@@ -52,15 +56,15 @@ html {
 }
 
 .main-login__title2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     line-height: 2.7rem;
     margin-bottom: 1.9rem;
 }
 
 .main-login__title3 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     line-height: 1.9rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
     margin-top: 40px;
 }
 
@@ -71,14 +75,21 @@ html {
     min-width: 300px;
     padding: 10px 0;
     border-radius: 25px;
-    font-weight: 700;
+    font-weight: bold;
     outline: none;
     margin-bottom: 16px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-login__cta span {
     margin-right: 5px;
     color: var(--site-black);
+    height: 18px;
+    font-size: 1.8rem;
 }
 
 .main-login__cta:hover, .main-login__cta:active {
@@ -89,9 +100,22 @@ html {
     color: var(--font-gray);
 }
 
+.google img{
+    width: 100%;
+    height: 100%;
+}
+
+.apple {
+    margin-bottom: 0;
+}
+
 .mail {
     background-color: var(--brand-blue);
     color: var(--font-white);
+}
+
+.mail:hover, .mail:active {
+    background-color: rgba(29, 155, 240, 0.1);
 }
 
 .signin {
@@ -104,23 +128,75 @@ html {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    margin-bottom: 19px;
+    margin: 4px 0;
 }
 
 .main-login__separator > hr {
-    width: 40%;
+    width: 50%;
     height: 1px;
-    border: 1px solid var(--font-gray);
+    background-color: #2f3336;
+    border: 0px solid var(--site-black);
 }
 
 .main-login__separator > p {
     margin: 0 5px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2rem;
+    font-weight: 500;
 }
 
 .main-login__terms {
     font-weight: 400;
     color: var(--font-gray);
     margin-bottom: 16px;
+}
+
+.main-image {
+    width: 100%;
+    padding: 32px;
+    height: 376px;
+    background-image: url("../images/lohp_1302x955.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-image__logo, .main-image__logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.main-image__logo svg {
+    fill: var(--site-white);
+}
+
+.footer {
+    color: var(--font-gray);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a{
+    color: var(--font-gray);
+    margin: 4px 0;
+    padding-right: 15px;
+}
+
+.footer-copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
