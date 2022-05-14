@@ -18,10 +18,16 @@ html {
     font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 .main {
     width: 100%;
     background-color: #000;
     overflow-wrap: break-word;
+    min-height: auto;
 }
 
 .main a {
@@ -38,15 +44,12 @@ html {
     color: var(--font-white);
     padding: 36px;
     font-weight: 700;
-}
-
-.main-login > * {
-    max-width: 300px;
+    margin: auto;
 }
 
 .main-login__logo {
-    font-size: 4.5rem;
-    line-height: 4.9rem;
+    font-size: 3.9rem;
+    line-height: 4rem;
 }
 
 .main-login__title1 {
@@ -129,6 +132,7 @@ html {
     flex-wrap: nowrap;
     align-items: center;
     margin: 4px 0;
+    width: 90%;
 }
 
 .main-login__separator > hr {
@@ -199,4 +203,67 @@ html {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 501px) {
+    .main-login__title1 {
+        font-size: 6.1rem;
+        line-height: 8rem;
+        margin: 46px 0;
+    }
+
+    .main-login__title2 {
+        font-size: 2.9rem;
+        line-height: 3.4rem;
+        margin-bottom: 30px;
+    }
+
+    .main-login__separator, .main-login__terms {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+        .main-login {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+}
+
+@media screen and (min-width: 1001px) {
+    .main {
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "c c";
+        align-items: end;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .main-login {
+        grid-area: b;
+        height: 100%;
+        padding: 34px;
+        width: 45vw;
+    }
+
+
+    .main-image {
+        grid-area: a;
+        height: auto;
+        height: 100%;
+        width: 42vw;
+    }
+
+    .footer {
+        grid-area: c;
+        height: 68px;
+    }
+
+    .footer-copy {
+        display: inline;
+        width: auto;
+        padding-top: 5px;
+    }
 }
