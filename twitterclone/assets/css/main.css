@@ -291,7 +291,7 @@ body {
 @media screen and (min-width: 1101px) {
     .hero {
         min-height: 92vh;
-        max-height: 95vh;
+        max-height: 93vh;
     }
 
     .hero-login {
