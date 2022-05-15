@@ -22,6 +22,7 @@ html {
 body {
     width: 100vw;
     height: 100vh;
+    background-color: var(--site-black);
 }
 
 .main {
@@ -310,6 +311,10 @@ body {
 /* Light mode */
 
 @media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--site-white);
+    }
+    
     .main {
         background-color: var(--site-white);
     }
