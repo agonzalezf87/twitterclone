@@ -4,6 +4,7 @@
     --white-logo: #d6d9db;
     --font-white: #e7e9ea;
     --font-gray: #71767b;
+    --font-lightgray: #cfd9de;
     --brand-blue: #1d9bf0;
 }
 
@@ -26,7 +27,7 @@ body {
 .main {
     height: 100vh;
     width: 100vw;
-    background-color: #000;
+    background-color: var(--site-black);
     overflow-wrap: break-word;
     min-height: auto;
 }
@@ -301,5 +302,42 @@ body {
 
     .footer {
         max-height: 5vh;
+    }
+}
+
+
+/* Light mode */
+
+@media (prefers-color-scheme: light) {
+    .main {
+        background-color: var(--site-white);
+    }
+
+    .hero-login {
+        color: var(--site-black);
+    }
+
+    .hero-login__logo {
+        color: var(--brand-blue);
+    }
+
+    .hero-login hr {
+        background-color: var(--font-lightgray);
+    }
+
+    .hero-login__cta {
+        border: 1px solid var(--font-lightgray);
+    }
+
+    .signin {
+        background-color: var(--site-white);
+    }
+
+    .mail:hover, .mail:active {
+        background-color: var(--brand-blue);
+    }
+
+    .footer {
+        background-color: var(--site-white);
     }
 }
